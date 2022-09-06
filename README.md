@@ -15,18 +15,18 @@ Usage: `./bin/SIRS [OPTIONS]`
 
 Options:
 ```
---img 			:	Original image file/path
---label 		: 	Segmented image file/path
---ext 			: 	Extension of segmented image (defaut: pgm)
---buckets 		: 	Number of color subsets (default:16)
---alpha 		: 	Number of subsets used to represent a superpixel (default:4)
---metric 		: 	Algorithm used to compute color homogeneity {1:SIRS, 2:EV} (default:1)
---gaussVar 		: 	Variance of gaussian in SIRS evaluation (default: 0.01)
+--img 		:	Original image file/path
+--label 	: 	Segmented image file/path
+--ext 		: 	Extension of segmented image (defaut: pgm)
+--buckets 	: 	Number of color subsets (default:16)
+--alpha 	: 	Number of subsets used to represent a superpixel (default:4)
+--metric 	: 	Algorithm used to compute color homogeneity {1:SIRS, 2:EV} (default:1)
+--gaussVar 	: 	Variance of gaussian in SIRS evaluation (default: 0.01)
 --imgScores 	: 	File/Path of the colored result of color homogeneity (optional)
 --drawScores 	: 	Boolean option {0,1} to write scores in the colored image result (imgScores option) (optional)
---log 			: 	txt log file with the mean value for a directory (optional)
---dlog 			: 	txt log file with the value of all images (optional)
---recon 		: 	File/Path of image reconstruction (optional)
+--log   	: 	txt log file with the mean value for a directory (optional)
+--dlog 		: 	txt log file with the value of all images (optional)
+--recon 	: 	File/Path of image reconstruction (optional)
 ```
 **Examples:**
 - Simple example: `./bin/SIRS --img ./image.jpg --label ./label_500.pgm --imgScores ./result.png`
